@@ -1,0 +1,18 @@
+{
+  "name": "@bdsx/essentials",
+  "version": "1.0.0",
+  "description": "A collection of essential features for BDSX.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "PneuJai",
+  "license": "ISC",
+  "bdsxPlugin": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepare": "tsc || exit 0"
+  },
+  "devDependencies": {
+    "bdsx": "file:../bdsx"
+  }
+}

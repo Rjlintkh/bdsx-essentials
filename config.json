@@ -1,0 +1,46 @@
+{
+    "show_loading_message": true,
+    "modules": {
+        "allow_user_resource_pack": {
+            "enabled": true
+        },
+        "nick": {
+            "enabled": true,
+            "command": {
+                "command": "nick",
+                "permission": 1
+            }
+        },
+        "seed": {
+            "enabled": true,
+            "command": {
+                "command": "seed",
+                "permission": 1
+            }
+        },
+        "transfer_server": {
+            "enabled": true,
+            "command": {
+                "command": "transferserver",
+                "permission": 1
+            }
+        },
+        "fake_seed": {
+            "enabled": true,
+            "fake_seed": 0
+        },
+        "force_world_settings": {
+            "enabled": true,
+            "edu_mode": true,
+            "cheats": true
+        },
+        "hide_auto_compaction": {
+            "enabled": true
+        }
+    },
+    "lang": {
+        "module.nick.command.desc": "Renames a player.",
+        "module.seed.command.desc": "Shows the seed of current world.",
+        "module.transfer_server.command.desc": "commands.transferserver.description"
+    }
+}
