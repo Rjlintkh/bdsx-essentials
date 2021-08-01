@@ -24,7 +24,7 @@ export class Motd extends Module {
                 serverInstance.setMotd(cache[index]);
             }
             index++;
-        }, this.config["modules"]["motd"]["interval-ms"]);
+        }, this.config["modules"]["motd"]["interval-ms"]).unref();
         events.queryRegenerate.on(event => {
             const levelname = this.getConfig()["modules"]["motd"]["level_name"];
             if (levelname.length !== 0 || levelname !== null) {
