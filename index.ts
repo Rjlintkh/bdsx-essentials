@@ -5,6 +5,7 @@ import { HideAutoCompaction } from "./modules/hide_auto_compaction";
 import { Motd } from "./modules/motd";
 import { Nick } from "./modules/nick";
 import { Seed } from "./modules/seed";
+import { ServerSettings } from "./modules/server_settings";
 import { TransferServer } from "./modules/transfer_server";
 
 console.log(`  _
@@ -19,4 +20,5 @@ new HideAutoCompaction()._();
 new Motd()._();
 new Nick()._();
 new Seed()._();
+new ServerSettings()._();
 new TransferServer()._();
