@@ -1,5 +1,6 @@
-import { ActorWildcardCommandSelector, CommandRawText } from "bdsx/bds/command";
+import { ActorWildcardCommandSelector } from "bdsx/bds/command";
 import { ServerPlayer } from "bdsx/bds/player";
+import { CxxString } from "bdsx/nativetype";
 import { Module } from "./base";
 
 export class Nick extends Module {
@@ -15,12 +16,12 @@ export class Nick extends Module {
                 this.setCommandOutput(output, "commands.generic.tooManyTargets", [], true);
             } else {
                 if (targets[0].isPlayer()) {
-                    targets[0].setName(params.name.text);
-                    this.setCommandOutput(output, "chat.renamed", [params.name.text]);
+                    targets[0].setName(params.name);
+                    this.setCommandOutput(output, "chat.renamed", [params.name]);
                 } else {
                     this.setCommandOutput(output, "commands.generic.targetNotPlayer", [], true);
                 }
             }
-        }, { target: ActorWildcardCommandSelector, name: CommandRawText });
+        }, { target: ActorWildcardCommandSelector, name: CxxString });
     }
 }
