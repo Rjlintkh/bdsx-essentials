@@ -11,6 +11,14 @@
                 "permission": 1
             }
         },
+        "motd": {
+            "enabled": true,
+            "level_name": "Custom level name",
+            "lock_server": true,
+            "messages": ["#1", "#2", "#3"],
+            "shuffle": false,
+            "interval-ms": 5000
+        },
         "seed": {
             "enabled": true,
             "command": {
@@ -36,6 +44,23 @@
         },
         "hide_auto_compaction": {
             "enabled": true
+        },
+        "server_settings": {
+            "enabled": true,
+            "settings": {
+                "type": "custom_form",
+                "title": "Example Settings",
+                "icon": {
+                  "type": "url",
+                  "data": "https://minecraft.gamepedia.com/media/minecraft.gamepedia.com/9/9c/Skeleton_Skull.png"  
+                },
+                "content": [
+                  {
+                    "type": "label",
+                    "text": "Lorem ipsum dolor sit amet"
+                  }
+                ]
+            }
         }
     },
     "lang": {
